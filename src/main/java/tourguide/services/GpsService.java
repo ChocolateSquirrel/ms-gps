@@ -2,10 +2,10 @@ package tourguide.services;
 
 import gpsUtil.GpsUtil;
 import gpsUtil.location.Attraction;
+
 import gpsUtil.location.VisitedLocation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
+import tourguide.model.Location;
 
 import java.util.List;
 import java.util.UUID;
@@ -13,6 +13,7 @@ import java.util.UUID;
 @Service
 public class GpsService {
 
+    private static final double STATUTE_MILES_PER_NAUTICAL_MILE = 1.15077945;
     private final GpsUtil gpsUtil;
 
     public GpsService() {
@@ -26,6 +27,5 @@ public class GpsService {
     public List<Attraction> getAttractions(){
         return gpsUtil.getAttractions();
     }
-
 
 }
