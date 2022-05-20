@@ -1,11 +1,11 @@
-package tourguide.controller;
+package gps.controller;
 
 import gpsUtil.location.Attraction;
 import gpsUtil.location.VisitedLocation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import tourguide.services.GpsService;
+import gps.services.GpsService;
 
 import java.util.List;
 import java.util.UUID;

@@ -1,11 +1,10 @@
-package tourguide.services;
+package gps.services;
 
 import gpsUtil.GpsUtil;
 import gpsUtil.location.Attraction;
 
 import gpsUtil.location.VisitedLocation;
 import org.springframework.stereotype.Service;
-import tourguide.model.Location;
 
 import java.util.List;
 import java.util.UUID;

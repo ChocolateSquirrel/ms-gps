@@ -1,4 +1,4 @@
-package tourguide.model;
+package gps.model;
 
 import lombok.Data;
 
